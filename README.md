@@ -9,7 +9,7 @@
 5. 建立Encoder跟Decoder的模型，這邊注意的是維度的關係
 
 Encoder由一層Embedding加上LSTM構成，輸出最後一個狀態[hidden_state, cell_state]當作Decoder的initial state
-Decoder也由一層Embedding加上LSTM構成，每個字的output是下個字，所以我們一開始只要輸入起始字串符<s>就像推倒骨牌般能輸出整個字串
+Decoder也由一層Embedding加上LSTM構成，每個字的output是下個字，所以我們一開始只要輸入起始字串符/<s/>就像推倒骨牌般能輸出整個字串
 
 6. 建立好模型後，就能把input跟target丟進去訓練
 
